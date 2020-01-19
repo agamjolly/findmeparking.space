@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=""I turn coffee :coffee: into code, use tabs over spaces and never broke production."">
 
-  <title>FindMeParking</title>
+  <title>FindMyParking</title>
   
 
   <!-- Font Awesome CDN -->
@@ -31,7 +31,7 @@
   <main class="flex-shrink-0 container mt-5">
   <nav class="navbar navbar-expand-lg navbar-light">
 
-  <a class="navbar-brand" href="/index.html"><h5><b>FindMeParking</b></h5></a>
+  <a class="navbar-brand" href="/listings.html"><h3><b>FindMyParking</b></h3></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -49,86 +49,165 @@
 </nav>
   <!-- Remote Projects JS -->
 <script src="https://youssefraafatnasry.me/portfolYOU/assets/js/remote-projects.js"></script>
+<br>
+<input class="form-control" id="myInput" onkeyup="myFunct()" type="text" placeholder="Search" aria-label="Search">
+<!-- <input type="text" id="myInput" onkeyup="myFunct()" placeholder="Search for names.."> --> 
 
+<ul id="myUL"><br>
+  <li><a href="/losangeles.html">Los Angeles</a></li>
+  <li><a href="/newyork.html">New York</a></li>
+  <li><a href="/sanfrancisco.html">San Francisco</a></li>
+  
+</ul>
+<script>
+  function myFunct() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+  <hr class="style1">
+  <br>
+<h3 style="text-align: center">All Listings</h3>
 <div class="card-columns m-3 mt-5">
-
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-    <a href="2-awesome-project.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="https://www.sketchappsources.com/resources/source-image/movie-badges-jurajjurik.png" alt="The Movies Project"><div class="card-body">
-        <h5 id="the-movies-project-name" class="card-title">The Movies Project
-        </h5>
-        <p id="the-movies-project-desc" class="card-text">This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!</p>
-        <p id="the-movies-project-tools" class="card-text">
-        </p>
-      </div>
-    </a>
-  </div>
-
     <script>get_tools("git-for-wizards")</script>
     <script>get_tools("arduino-visitor-counter")</script>
 
-  
-
-  <!-- Local Projects -->
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-    <a href="2-awesome-project.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="https://www.sketchappsources.com/resources/source-image/movie-badges-jurajjurik.png" alt="The Movies Project"><div class="card-body">
-        <h5 id="the-movies-project-name" class="card-title">The Movies Project
-        </h5>
-        <p id="the-movies-project-desc" class="card-text">This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!</p>
-        <p id="the-movies-project-tools" class="card-text">
-        
-        </p>
+    <div class="wow animated fadeIn" data-wow-delay=".15s">
+        <a href="/listing_la.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="/img/p1.jpg" alt="The Movies Project"><div class="card-body">
+            <h5 id="the-movies-project-name" class="card-title">900 Wilshire Blvd, LA
+            </h5>
+            <p id="the-movies-project-desc" class="card-text">Secure parking space located in residential Los Angeles. Safe location with no  criminal history.</p>
+            <p id="the-movies-project-tools" class="card-text">
+            </p>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
-
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="2-awesome-project.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="https://www.sketchappsources.com/resources/source-image/movie-badges-jurajjurik.png" alt="The Movies Project"><div class="card-body">
-      <h5 id="the-movies-project-name" class="card-title">The Movies Project
-      </h5>
-      <p id="the-movies-project-desc" class="card-text">This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!</p>
-      <p id="the-movies-project-tools" class="card-text">
-      
-      </p>
-    </div>
-  </a>
-</div>
-
-<div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="2-awesome-project.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="https://www.sketchappsources.com/resources/source-image/movie-badges-jurajjurik.png" alt="The Movies Project"><div class="card-body">
-      <h5 id="the-movies-project-name" class="card-title">The Movies Project
-      </h5>
-      <p id="the-movies-project-desc" class="card-text">This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!</p>
-      <p id="the-movies-project-tools" class="card-text">
-        
-    
-      </p>
-    </div>
-  </a>
-</div>
-<div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="2-awesome-project.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="https://www.sketchappsources.com/resources/source-image/movie-badges-jurajjurik.png" alt="The Movies Project"><div class="card-body">
-      <h5 id="the-movies-project-name" class="card-title">The Movies Project
-      </h5>
-      <p id="the-movies-project-desc" class="card-text">This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!</p>
-      <p id="the-movies-project-tools" class="card-text">
-        
-      </p>
-    </div>
-  </a>
-</div>
-<div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="2-awesome-project.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="https://www.sketchappsources.com/resources/source-image/movie-badges-jurajjurik.png" alt="The Movies Project"><div class="card-body">
-      <h5 id="the-movies-project-name" class="card-title">The Movies Project
-      </h5>
-      <p id="the-movies-project-desc" class="card-text">This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!</p>
-      <p id="the-movies-project-tools" class="card-text">
-       
-      </p>
-    </div>
-  </a>
-</div>
-  </a>
-</div>
+      <div class="wow animated fadeIn" data-wow-delay=".15s">
+              <a href="/listing_la2.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="/img/p2.jpg" alt="The Movies Project"><div class="card-body">
+                  <h5 id="the-movies-project-name" class="card-title">832 Francisco Street, LA
+                  </h5>
+                  <p id="the-movies-project-desc" class="card-text">Parking space available in Lowe's parking lot in suburban Los Angeles near Chinatown.
+            
+                        </p>
+                  <p id="the-movies-project-tools" class="card-text">
+                    
+                
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="wow animated fadeIn" data-wow-delay=".15s">
+                  <a href="/listing_la3.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="/img/p10.jpeg" alt="The Movies Project"><div class="card-body">
+                      <h5 id="the-movies-project-name" class="card-title">725 Grand Avenue, LA
+                      </h5>
+                      <p id="the-movies-project-desc" class="card-text">Lovely parking space next to a park near downtown Los Angeles. Competitive prices and great location.
+                
+                            </p>
+                      <p id="the-movies-project-tools" class="card-text">
+                        
+                    
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="wow animated fadeIn" data-wow-delay=".15s">
+                    <a href="/listing_ny.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="/img/p3.jpg" alt="The Movies Project"><div class="card-body">
+                        <h5 id="the-movies-project-name" class="card-title">776 6th Avenue, NY
+                        </h5>
+                        <p id="the-movies-project-desc" class="card-text">Lovely parking space located in Manhattan, with minimal criminal history and low congestion.
+                              </p>
+                        <p id="the-movies-project-tools" class="card-text">
+                          
+                      
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="wow animated fadeIn" data-wow-delay=".15s">
+                          <a href="/listing_ny2.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="/img/p4.jpeg" alt="The Movies Project"><div class="card-body">
+                              <h5 id="the-movies-project-name" class="card-title">220 26th Street, NY
+                              </h5>
+                              <p id="the-movies-project-desc" class="card-text">Secure parking in driveway located in residential New York City. Safe location with no criminal history.
+                        
+                                    </p>
+                              <p id="the-movies-project-tools" class="card-text">
+                                
+                            <!--p7 SF-->
+                              </p>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="wow animated fadeIn" data-wow-delay=".15s">
+                              <a href="/listing_ny3.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="/img/p9.jpeg" alt="The Movies Project"><div class="card-body">
+                                  <h5 id="the-movies-project-name" class="card-title">222 51st St., NY
+                                  </h5>
+                                  <p id="the-movies-project-desc" class="card-text">Secure parking space next to movie theater in New York City. Relatively unsafe location with lots of prior criminal history.
+                            
+                                        </p>
+                                  <p id="the-movies-project-tools" class="card-text">
+                                    
+                                
+                                  </p>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="wow animated fadeIn" data-wow-delay=".15s">
+                                <a href="/listing_sf.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="/img/p5.jpg" alt="The Movies Project"><div class="card-body">
+                                    <h5 id="the-movies-project-name" class="card-title">175 Drum Street, San Francisco
+                                    </h5>
+                                    <p id="the-movies-project-desc" class="card-text">Secure parking space located in suburban San Francisco, with almost no criminal history.
+                              
+                                          </p>
+                                    <p id="the-movies-project-tools" class="card-text">
+                                      
+                                  
+                                    </p>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="wow animated fadeIn" data-wow-delay=".15s">
+                                      <a href="/listing_sf2.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="/img/p6.jpg" alt="The Movies Project"><div class="card-body">
+                                          <h5 id="the-movies-project-name" class="card-title">412 Front Street, San Francisco
+                                          </h5>
+                                          <p id="the-movies-project-desc" class="card-text">Unsecure parking space located in suburban San Francisco, with nearly no criminal history.
+                                    
+                                                </p>
+                                          <p id="the-movies-project-tools" class="card-text">
+                                            
+                                        
+                                          </p>
+                                        </div>
+                                      </a>
+                                    </div>
+                                    <div class="wow animated fadeIn" data-wow-delay=".15s">
+                                          <a href="/listing_sf3.html" class="project card text-dark"><img id="the-movies-project-img" class="card-img-top" src="/img/p7.jpeg" alt="The Movies Project"><div class="card-body">
+                                              <h5 id="the-movies-project-name" class="card-title">500 Cali St., San Francisco
+                                              </h5>
+                                              <p id="the-movies-project-desc" class="card-text">Residential parking in suburban San Francisco Bay Area, with little to no record of crime or illict activities in the area.
+                                        
+                                                    </p>
+                                              <p id="the-movies-project-tools" class="card-text">
+                                                
+                                            
+                                              </p>
+                                            </div>
+                                          </a>
+                                        </div>
 
 </div>
   </main>
