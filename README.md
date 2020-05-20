@@ -1,16 +1,16 @@
-#FindMyParking.space
+# FindMyParking.space
 
 FindMyParking space is a marketplace portal that allows users to rent and lease parking spots. The app provides a marketplace for individuals and businesses to lease parking spots for visitors to rent, especially during crowded events in urban areas. One can think of the portal as Airbnb for parking spaces -- an interactive market where people with spare parking can sell their spaces for money to people looking for parking spots, particularly helpful for congested events. 
 
 The app came out as a hackathon project and is currently being maintained by me. 
 
-##Project Structure
+## Project Structure
 
 The project has been split between two branches, where the `master` branch (made up of just static files) is deployed on GitHub pages. 
 
 The `dev` branch contains the Flask source, which can be compiled to run on a server. 
 
-##Running
+## Running
 
 You can run the Flask backend by installing all dependencies using `pip` and then installing a virtual environment (recommended) and then running
 
