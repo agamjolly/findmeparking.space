@@ -1,8 +1,8 @@
-# FindMyParking.space
+# FindMeParking.space
 
-Access the demo of the deployed app [here](http://findmyparking.space).
+Access the demo of the deployed app [here](http://findmeparking.space).
 
-FindMyParking space is a marketplace portal that allows users to rent and lease parking spots. The app provides a marketplace for individuals and businesses to lease parking spots for visitors to rent, especially during crowded events in urban areas. One can think of the portal as Airbnb for parking spaces -- an interactive market where people with spare parking can sell their spaces for money to people looking for parking spots, particularly helpful for congested events. 
+FindMeParking space is a marketplace portal that allows users to rent and lease parking spots. The app provides a marketplace for individuals and businesses to lease parking spots for visitors to rent, especially during crowded events in urban areas. One can think of the portal as Airbnb for parking spaces -- an interactive market where people with spare parking can sell their spaces for money to people looking for parking spots, particularly helpful for congested events. 
 
 The app came out as a hackathon project and is currently being maintained by me. 
 
